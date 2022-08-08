@@ -8,12 +8,14 @@
         below
       </p>
       <el-button>el-button</el-button>
-      <!-- Dialog -->
+      <!-- vue-dialog-drag -->
       <div>
-        <button v-if="!showDialog" @click="showDialog = true">Show Dialog</button>
+        <button v-if="!showDialog" @click="showDialog = true">Show vue-dialog-drag</button>
       </div>
       <div style="width: 30%">
-        <dialog-drag v-if="showDialog" id="dialog-1" :options="options" @close="closedDialog"> </dialog-drag>
+        <dialog-drag v-if="showDialog" id="dialog-1" title="Note" :options="options" @close="closedDialog">
+          {{ noteContent }}
+        </dialog-drag>
       </div>
     </div>
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -39,7 +41,8 @@
           y: 200,
           width: 500,
           height: 400
-        }
+        },
+        noteContent: 'Hello, Note contents!!!'
       }
     },
     methods: {
@@ -60,5 +63,25 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  /* vue-dialog-drag css */
+  /* https://github.com/emiliorizzo/vue-dialog-drag/blob/master/src/lib/styl/dialog-styles.styl */
+  .dialog-drag {
+    min-width: 10em;
+    background-color: white;
+    /* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); */
+    /* border: gray dashed 2px; */
+    border: #aaaaaa solid 1px;
+    text-align: left;
+    border-radius: 4px;
+    min-height: 130px;
+  }
+
+  .dialog-drag .dialog-header {
+    background-color: #cccccc;
+    color: #222222;
+    font-weight: bold;
+    margin: 2px;
+    border-radius: 4px;
   }
 </style>
