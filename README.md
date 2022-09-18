@@ -37,3 +37,9 @@ pug
 
 2. vue-dialog-drag
    npm install vue-dialog-drag --save
+
+3. flv.js
+   npm install --save flv.js
+   live stream
+   http://bilibili.github.io/flv.js/demo/
+   https://github.com/Bilibili/flv.js/

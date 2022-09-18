@@ -18,19 +18,24 @@
         </dialog-drag>
       </div>
     </div>
+    <!-- flv player -->
+    <FlvPlayer />
+
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
   import DialogDrag from 'vue-dialog-drag'
+  import HelloWorld from './components/HelloWorld.vue'
+  import FlvPlayer from './components/FlvPlayer.vue'
 
   export default {
     name: 'app',
     components: {
+      DialogDrag,
       HelloWorld,
-      DialogDrag
+      FlvPlayer
     },
     data() {
       return {
