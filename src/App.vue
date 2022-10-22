@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <SiteNavigation />
+    <!-- Highcharts -->
+    <LineChartDay />
     <LineChart />
+
     <img src="./assets/logo.png" />
     <div>
       <p>
@@ -33,6 +36,7 @@
   import FlvPlayer from './components/FlvPlayer.vue'
   import SiteNavigation from './components/SiteNavigation.vue'
   import LineChart from './components/chart/LineChart'
+  import LineChartDay from './components/chart/LineChartDay'
 
   export default {
     name: 'app',
@@ -41,7 +45,8 @@
       HelloWorld,
       FlvPlayer,
       SiteNavigation,
-      LineChart
+      LineChart,
+      LineChartDay
     },
     data() {
       return {
