@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <SiteNavigation />
     <img src="./assets/logo.png" />
     <div>
       <p>
@@ -29,13 +30,15 @@
   import DialogDrag from 'vue-dialog-drag'
   import HelloWorld from './components/HelloWorld.vue'
   import FlvPlayer from './components/FlvPlayer.vue'
+  import SiteNavigation from './components/SiteNavigation.vue'
 
   export default {
     name: 'app',
     components: {
       DialogDrag,
       HelloWorld,
-      FlvPlayer
+      FlvPlayer,
+      SiteNavigation
     },
     data() {
       return {
