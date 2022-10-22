@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <SiteNavigation />
+    <LineChart />
     <img src="./assets/logo.png" />
     <div>
       <p>
@@ -31,6 +32,7 @@
   import HelloWorld from './components/HelloWorld.vue'
   import FlvPlayer from './components/FlvPlayer.vue'
   import SiteNavigation from './components/SiteNavigation.vue'
+  import LineChart from './components/chart/LineChart'
 
   export default {
     name: 'app',
@@ -38,7 +40,8 @@
       DialogDrag,
       HelloWorld,
       FlvPlayer,
-      SiteNavigation
+      SiteNavigation,
+      LineChart
     },
     data() {
       return {

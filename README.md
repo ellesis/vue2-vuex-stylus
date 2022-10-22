@@ -1,6 +1,30 @@
 # vue2-stylus-vuex
 
-## Project setup
+## Installed Library
+
+1. ElementUI
+   npm i element-ui -S
+
+2. vue-dialog-drag
+   npm install vue-dialog-drag --save
+
+3. flv.js
+   npm install --save flv.js
+   live stream
+   http://bilibili.github.io/flv.js/demo/
+   https://github.com/Bilibili/flv.js/
+
+4. font awesome
+
+5. highcharts
+
+```sh
+npm install --save highcharts
+npm install highcharts-vue
+
+```
+
+# Project setup
 
 ```
 npm install
@@ -29,17 +53,3 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 pug
-
-## Install Library
-
-1. ElementUI
-   npm i element-ui -S
-
-2. vue-dialog-drag
-   npm install vue-dialog-drag --save
-
-3. flv.js
-   npm install --save flv.js
-   live stream
-   http://bilibili.github.io/flv.js/demo/
-   https://github.com/Bilibili/flv.js/
