@@ -21,8 +21,9 @@
 ```sh
 npm install --save highcharts
 npm install highcharts-vue
-
 ```
+
+Highchart - using globally
 
 # Project setup
 

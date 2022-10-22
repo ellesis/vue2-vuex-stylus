@@ -19,6 +19,8 @@
     <!-- Highcharts -->
     <div>
       <h1>Highcharts</h1>
+      <RiskEventDayChart />
+      <RiskEventTypeChart />
       <BarChart />
       <LineChartDay />
       <LineChart />
@@ -44,6 +46,8 @@
   import LineChart from './components/chart/LineChart'
   import LineChartDay from './components/chart/LineChartDay'
   import BarChart from './components/chart/BarChart'
+  import RiskEventDayChart from './components/chart/RiskEventDayChart'
+  import RiskEventTypeChart from './components/chart/RiskEventTypeChart'
 
   export default {
     name: 'app',
@@ -53,7 +57,9 @@
       SiteNavigation,
       LineChart,
       LineChartDay,
-      BarChart
+      BarChart,
+      RiskEventDayChart,
+      RiskEventTypeChart
     },
     data() {
       return {
