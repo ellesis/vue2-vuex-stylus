@@ -1,52 +1,59 @@
 <template>
   <div id="app">
     <SiteNavigation />
-    <!-- Highcharts -->
-    <LineChartDay />
-    <LineChart />
-
     <img src="./assets/logo.png" />
+    <hr />
+
+    <!-- vue-dialog-drag -->
     <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
-      <!-- vue-dialog-drag -->
-      <div>
-        <button v-if="!showDialog" @click="showDialog = true">Show vue-dialog-drag</button>
-      </div>
+      <h1>vue-dialog-drag</h1>
+      <button v-if="!showDialog" @click="showDialog = true">Show vue-dialog-drag</button>
       <div style="width: 30%">
         <dialog-drag v-if="showDialog" id="dialog-1" title="Note" :options="options" @close="closedDialog">
           {{ noteContent }}
         </dialog-drag>
       </div>
     </div>
-    <!-- flv player -->
-    <FlvPlayer />
+    <hr />
+
+    <!-- Highcharts -->
+    <div>
+      <h1>Highcharts</h1>
+      <BarChart />
+      <LineChartDay />
+      <LineChart />
+    </div>
+    <hr />
+
+    <!-- Element-UI -->
+    <div>
+      <h1>Element-UI</h1>
+      <el-button>el-button</el-button>
+    </div>
+    <hr />
 
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-  import DialogDrag from 'vue-dialog-drag'
   import HelloWorld from './components/HelloWorld.vue'
-  import FlvPlayer from './components/FlvPlayer.vue'
+
+  import DialogDrag from 'vue-dialog-drag'
   import SiteNavigation from './components/SiteNavigation.vue'
   import LineChart from './components/chart/LineChart'
   import LineChartDay from './components/chart/LineChartDay'
+  import BarChart from './components/chart/BarChart'
 
   export default {
     name: 'app',
     components: {
-      DialogDrag,
       HelloWorld,
-      FlvPlayer,
+      DialogDrag,
       SiteNavigation,
       LineChart,
-      LineChartDay
+      LineChartDay,
+      BarChart
     },
     data() {
       return {
